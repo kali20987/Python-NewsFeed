@@ -14,7 +14,6 @@ db.add_all([
   User(username='iboddam2', email='cstoneman2@last.fm', password='password123'),
   User(username='dstanmer3', email='ihellier3@goo.ne.jp', password='password123'),
   User(username='djiri4', email='gmidgley4@weather.com', password='password123'),
-  User(username='alesmonde0', email='notvalid', password='password123')
 ])
 
 db.commit()
