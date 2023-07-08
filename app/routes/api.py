@@ -3,6 +3,7 @@ from app.models import User
 from app.db import get_db
 import sys
 from app.models import User, Post, Comment, Vote
+import pdb
 
 bp = Blueprint('api', __name__, url_prefix='/api')
 
@@ -14,10 +15,11 @@ def signup():
   try:
     # attempt creating a new user
     newUser = User(
+      password = data['password'],
       username = data['username'],
       email = data['email'],
-      password = data['password']
     )
+    pdb.set_trace()
 
     db.add(newUser)
     db.commit()
